@@ -1,19 +1,151 @@
 /* Reset default margin and padding */
-body, h1 {
+body, h1, h2, h3, h4, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Style the header */
-.header {
-    background-color: #007bff;
-    padding: 16px;
+body,html {
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
 }
 
-/* Style the header title */
-.header__title {
-    color: #fff;
-    font-size: 24px;
-    font-weight: bold;
-    margin: 0;
+.experience-heading, .experience-title {
+    color: #484848;
+}
+
+.experience-heading {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+}
+
+.experience-title {
+    font-size: 1.4rem;
+}
+
+/* Style the main content */
+main {
+    display: flex;
+    flex-direction: row;
+}
+
+.w30 {
+    width: 30%;
+    min-width: 250px;
+    background-color: #f0f0f0;
+}
+
+.w70 {
+    width: 70%;
+    min-width: 500px;
+}
+
+.ltr-spc {
+    letter-spacing: 5px;
+}
+
+.left-about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+}
+
+.right-experience { 
+    display: flex;
+    flex-direction: column;
+    padding: 0% 5%;
+    padding-top: 25px;
+}
+
+.abt-name {
+    font-size: 1.8rem;
+    font-weight: 800;
+}
+
+.abt-l {
+    padding-right: 5px;
+    color: rgb(45, 45, 45);
+}
+
+.abt-r {
+    color: rgb(124, 124, 124);
+}
+
+.job-block {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+}
+
+.job-title {
+    color:rgb(45, 45, 45)
+}
+
+.tc-center {
+    text-align: center;
+}
+
+.date-range {
+    color: rgb(130, 130, 130);
+    margin-top: 3px;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgb(130, 130, 130);;
+}
+
+blockquote {
+    border-left: 3px solid #728f65;
+    padding-left: 15px;
+    color: #72836b;
+    font-size: 1.2rem;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.hero-portrait {
+    width: 250px;
+    height: 250px;
+    border-radius: 100%;
+    background-color: #ddd;
+    margin-bottom: 20px;
+    object-fit: cover;
+    overflow: hidden;
+    margin-top: 20px;
+}
+
+.hero-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.emp {
+    font-size: 1.2rem;
+}
+
+button {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    width: 125px;
+    padding: 15px;
+    background: #94a090;
+    border: 1px solid gray;
+    color: white;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+button:hover {
+    background: #788275;
+}
+
+button:disabled {
+    cursor: not-allowed;
 }
