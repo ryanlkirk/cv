@@ -15,10 +15,13 @@ body,html {
 
 .experience-heading {
     font-size: 1.4rem;
-    margin-bottom: 10px;
+    padding: 15px 0px;
+    border-bottom: 1px solid gray;
+    border-top: 1px solid gray;
+    margin-bottom: 20px;
 }
 
-.experience-title {
+.lrg-text {
     font-size: 1.4rem;
 }
 
@@ -31,7 +34,8 @@ main {
 .w30 {
     width: 30%;
     min-width: 250px;
-    background-color: #f0f0f0;
+    background-color: #171A21;
+    color: white;
 }
 
 .w70 {
@@ -59,17 +63,9 @@ main {
 
 .abt-name {
     font-size: 1.8rem;
-    font-weight: 800;
+    color: #DADFF7;
 }
 
-.abt-l {
-    padding-right: 5px;
-    color: rgb(45, 45, 45);
-}
-
-.abt-r {
-    color: rgb(124, 124, 124);
-}
 
 .job-block {
     display: flex;
@@ -97,7 +93,6 @@ blockquote {
     border-left: 3px solid #728f65;
     padding-left: 15px;
     color: #72836b;
-    font-size: 1.2rem;
 }
 
 .mb-10 {
@@ -126,6 +121,14 @@ blockquote {
     padding-left: 5px;
 }
 
+.p10 {
+    padding: 10px
+}
+
+.job-bg {
+    background-color: #f5f5f5;
+}
+
 .emp {
     font-size: 1.2rem;
 }
@@ -152,12 +155,12 @@ button:disabled {
 
 .fa-brands {
     font-size: 3rem;
-    color: gray;
+    color: #2B59C3;
     padding: 8px;
 }
 
-.p-lr-10 {
-    padding: 0px 10px;
+.p-lr-20 {
+    padding: 0px 20px;
 }
 
 .pt-20 {
@@ -174,5 +177,10 @@ button:disabled {
 
 .display-none {
     display: none;
+}
+
+.mw-300 {
+    max-width: 300px;
+    height: auto;
 }
 

@@ -16,11 +16,11 @@
 <body>
     <main>
         <section class="left-about w30">
-            <p class="abt-name ltr-spc"><span class="abt-l">Ryan</span><span class="abt-r">Kirk</span></p>
+            <p class="abt-name ltr-spc">Ryan Kirk</p>
             <p class="tc-center ltr-spc">UK based Front End Developer</p>
-            <div class="hero-portrait"><img class="drop-shadow hero-img" style="flex: 1" src="./images/Ryan-1.jpg" alt="man-thinking" />
+            <div class="hero-portrait"><img class="drop-shadow hero-img" style="flex: 1" src="./images/Ryan-1.jpg" alt="portrait" />
             </div>
-            <div class="tc-center mb-10 p-lr-10">
+            <div class="tc-center mb-10 p-lr-20">
                 <p class="mb-10">I am a front-end react developer with over 10 years experience in the tech industry and
                     I am
                     passionate
@@ -31,7 +31,7 @@
                     also a volunteer mental health mentor for the charity Mind.</p>
             </div>
             <div class="tc-center">
-                <div class=" experience-title pt-20">Usual tech stack:</div>
+                <div class="lrg-text pt-20">Usual tech stack:</div>
                 <div><i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3-alt"></i>
                     <i class="fa-brands fa-square-js"></i>
@@ -41,7 +41,7 @@
                 </div>
             </div>
             <div class="tc-center">
-                <div class="tc-center experience-title pt-20 mb-10">Other relevant experience</div>
+                <div class="tc-center lrg-text pt-20 mb-10">Other relevant experience</div>
                 <p style="font-size: 1.1rem" class="pt-20">Testing Frameworks:</p>
                 <p>Jest</p>
                 <p>Cypress</p>
@@ -51,75 +51,71 @@
             </div>
         </section>
         <section class="right-experience w70">
-            <article class="job-block"><span class="experience-heading">Work experience:</span>
-                <p class="mb-10">The products I have worked on are used by <em>hundreds of thousands</em> of individual
-                    users, across more than 30 countries and 4 continents. Trusted by a wide array of companies from
-                    <span class="emp">multi-billion dollar</span> companies to tiny rural schools.
-                </p>
+            <p class="mb-10">I have worked on products that are used by hundreds of thousands of individual users, across more than 30 countries and 4 continents.
+                I've had the pleasure of building performant, reliable software that is trusted by a wide array of customers, from tiny rural schools to billion dollar businesses.
+            </p>
 
-                <p>I am continually staying at the forefront of the ever-evolving technology landscape. Through various
-                    training such as online courses and workshops, I have proactively sought out opportunities to expand
-                    my skill set and stay updated with the latest advancements in React and related technologies.</p>
+            <p>I am continually staying at the forefront of the ever-evolving technology landscape. Through various
+                training such as online courses and workshops, I have proactively sought out opportunities to expand
+                my skill set and stay updated with the latest advancements in React and related technologies.</p>
             </article>
 
-            <article class="job-block"><span class="experience-title">Service Power</span>
-                <p class="date-range">Sept 2021 to present | <span class="job-title">Front End Developer</span></p>
-                <p>My role here is front end react developer on a product that is being migrated from a native windows
-                    app and rebuilt for the web in React. This is a commercial product used by over 18,000 different
-                    companies across 36 countries by huge names in the retail and tech space such as John Lewis, Costco,
-                    Home Depot and LG.</p>
+            <article class="job-block pt-20"><span class="experience-heading">Work experience:</span>
 
-                <blockquote>"His calm approach to work made him an awesome person to work alongside. Ryan's attention to
-                    detail and creativity consistently exceeded my expectations. His work ethic was second to none and
-                    he really had a passion to show what he was great at"<p>Ajmal Khan - Development manager</p>
-                </blockquote>
-                <button id="SP-btn" onclick="toggleProject('sp-project', 'SP-btn')">View Project</button>
-                <div id="sp-project" class="d-flex pt-20 display-none">
-                    <article class="project-info">
-                        <p class="experience-title">About this project:</p>
-                        <p>Coming Soon</p>
-                    </article>
+                <article class="job-block job-bg p10"><span class="experience-title lrg-text">Service Power</span>
+                    <p class="date-range">Sept 2021 to present | <span class="job-title">Front End Developer</span></p>
+                    <p>My role here is front end react developer on a product that is being migrated from a native windows
+                        app and rebuilt for the web in React. This is a commercial product used by over 18,000 different
+                        companies across 36 countries by huge names in the retail and tech space such as John Lewis, Costco,
+                        Home Depot and LG.</p>
+
+                    <blockquote>"His calm approach to work made him an awesome person to work alongside. Ryan's attention to
+                        detail and creativity consistently exceeded my expectations. His work ethic was second to none and
+                        he really had a passion to show what he was great at"<p>Ajmal Khan - Development manager</p>
+                    </blockquote>
+                    <button id="SP-btn" onclick="toggleProject('sp-project', 'SP-btn')">View Project</button>
+                    <div id="sp-project" class="d-flex pt-20 display-none">
+                        <article class="project-info">
+                            <p class="experience-title lrg-text">About this project:</p>
+                            <p>Coming Soon</p>
+                        </article>
+                    </div>
+                </article>
+
+                <article class="job-block job-bg p10"><span class="experience-title lrg-text">Twitch Chat Bot</span>
+                    <p class="date-range">2020 | <span class="job-title">Personal Node JS Project</span></p>
+                    <p>
+                        I created a twitch chatbot using Node JS and twitch API's to monitor incoming messages in twitch
+                        streams. It had the ability to block offensive words, block repeat offenders of rule breaches, tell
+                        jokes, greet people when they entered the chat, respond to commands and share information at set
+                        time intervals.
+                    </p>
+                    <button id="twitch-btn" onclick="toggleProject('twitch-project', 'twitch-btn')">View Project</button>
+                    <div id="twitch-project" class="d-flex pt-20 display-none">
+                        <img src="./images/twitch.png" alt="Twitch.tv">
+                        <article class="project-info">
+                            <p class="experience-title lrg-text">About this project:</p>
+                            <p>This was a project I worked on in my spare
+                                time to give to a friend who streamed video games on Twitch. He was struggling to focus on
+                                streaming while dealing with requests in the stream chat and contending with the abuse and
+                                trolling that can come from that platform.
+                            </p>
+                            <p class="pt-20">I saw an opportunity to get some basic understanding of node and improve my coding skills. After a fair few videos and many hours of trial and
+                                error I built an app that could be run locally on his machine every time he streamed.</p>
+                            <p class="pt-20">
+                                This bot had its own user account and permissions as an admin on his twitch channel and
+                                would monitor incoming messages for spam/abuse, respond to commands such as "!joke" and return a random
+                                joke from an API that returned a random joke. It would also keep track of whether a person spoke for the first time in chat and greet
+                                them when they did, plus a few other basic features such as time based announcements and reminders to follow on social media platforms.
+                            </p>
+                        </article>
+                    </div>
+                </article>
+
                 </div>
             </article>
 
-            <article class="job-block"><span class="experience-title">Twitch Chat Bot</span>
-                <p class="date-range">2020 | <span class="job-title">Personal Node JS Project</span></p>
-                <p>
-                    I created a twitch chatbot using Node JS and twitch API's to monitor incoming messages in twitch
-                    streams. It had the ability to block offensive words, block repeat offenders of rule breaches, tell
-                    jokes, greet people when they entered the chat, respond to commands and share information at set
-                    time intervals.
-                </p>
-                <button id="twitch-btn" onclick="toggleProject('twitch-project', 'twitch-btn')">View Project</button>
-                <div id="twitch-project" class="d-flex pt-20 display-none">
-                    <img src="./images/twitch.png" alt="Twitch.tv">
-                    <article class="project-info">
-                        <p class="experience-title">About this project:</p>
-                        <p>This was a project I worked on in my spare
-                            time to give to a friend who streamed video games on Twitch. He was struggling to focus on
-                            streaming while dealing with requests in the stream chat and contending with the abuse and
-                            trolling that can come from that platform.
-                        <p class="pt-20">I saw an opportunity to get some basic
-                            understanding
-                            of node and improve my coding skills. After a fair few videos and many hours of trail and
-                            error
-                            I built an app that could be ran locally on his machine every time he streamed.</p>
-                        <p class="pt-20">
-                            This bot had its own user account and permissions as an admin on his twitch channel and
-                            would monitor incoming messages for spam/abuse, respond to commands such as "!joke" and return a random
-                            joke from an API that returned a random joke. It would also keep track of if a person spoke for the first time in chat and greet
-                            them when they did, plus a few other basic features such as time based announcements and
-                            reminders to follow on social media platforms.
-                        </p>
-                        </p>
-                    </article>
-                </div>
-            </article>
-
-            </div>
-            </article>
-
-            <article class="job-block"><span class="experience-title">Juniper Education</span>
+            <article class="job-block job-bg p10"><span class="experience-title lrg-text">Juniper Education</span>
                 <p class="date-range">Nov 2018 to Sept 2021 | <span class="job-title">UI/UX and Front End
                         Developer</span></p>
                 <p>
@@ -137,14 +133,26 @@
                 </p>
                 <button id="jun-btn" onclick="toggleProject('jun-project', 'jun-btn')">View Project</button>
                 <div id="jun-project" class="d-flex pt-20 display-none">
+                    <section><img class="mb-10 mw-300" src="./images/juniper1.png" alt="juniper app screenshot">
+                        <img class="mw-300" src="./images/juniper2.png" alt="juniper assessment screen">
+                    </section>
+
                     <article class="project-info">
-                        <p class="experience-title">About this project:</p>
-                        <p>Coming Soon</p>
+                        <p class="experience-title lrg-text">About this project:</p>
+                        <p>My work at juniper was to a some degree a continuation of the work I started at OTrack.
+                        </p>
+                        <p class="pt-20">The app was built using React for the front end. The focus was to build on the app that we started at OTrack, adding new features and rebranding the app
+                            to match the new branding guidlines. We added features that saved teachers time using tools such as rapid data entry though mass entry options and providing them with data analysis they would normally have to do manually.
+                        </p>
+                        <p class="pt-20">
+                            The platform was connected with other products across the business and also with external products such as managment information systems via API's, allowing
+                            a seamless transition of data between multiple systems.
+                        </p>
                     </article>
                 </div>
             </article>
 
-            <article class="job-block"><span class="experience-title">OTrack</span>
+            <article class="job-block job-bg p10"><span class="experience-title lrg-text">OTrack</span>
                 <p class="date-range">Nov 2013 to Nov 2018 | <span class="job-title">Team Lead and Developer</span></p>
                 <p class="mb-10">My initial role here was customer support however I quickly moved to crystal report
                     development and
@@ -155,13 +163,13 @@
                 <button id="otrack-btn" onclick="toggleProject('otrack-project', 'otrack-btn')">View Project</button>
                 <div id="otrack-project" class="d-flex pt-20 display-none">
                     <article class="project-info">
-                        <p class="experience-title">About this project:</p>
+                        <p class="experience-title lrg-text">About this project:</p>
                         <p>Coming Soon</p>
                     </article>
                 </div>
             </article>
 
-            <article class="job-block"><span class="experience-title">Plusnet</span>
+            <article class="job-block job-bg p10"><span class="experience-title lrg-text">Plusnet</span>
                 <p class="date-range">Jan 2012 - Nov 2013 | <span class="job-title">Tech Support</span></p>
                 <p class="mb-10">My initial role here was customer support however I quickly moved to crystal report
                     development and
@@ -171,7 +179,7 @@
                     I also developed crystal reports to support the teams workload where required. </p>
             </article>
 
-            <article class="job-block"><span class="experience-title">Dixons</span>
+            <article class="job-block job-bg p10"><span class="experience-title lrg-text">Dixons</span>
                 <p class="date-range">Jan 2012 - Nov 2013 | <span class="job-title">Technical Expert</span></p>
                 <p class="mb-10">first and second line technical support for Dixons customers</p>
             </article>
