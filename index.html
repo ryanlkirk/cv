@@ -16,22 +16,17 @@
 <body>
     <main>
         <section class="left-about w30">
-            <p class="abt-name ltr-spc">Ryan Kirk</p>
-            <p class="tc-center ltr-spc">UK based Front End Developer</p>
+            <h1 class="abt-name ltr-spc">Ryan Kirk</h1>
+            <h2 class="uk-dev tc-center ltr-spc">UK based Front End Developer</h2>
             <div class="hero-portrait"><img class="drop-shadow hero-img" style="flex: 1" src="./images/Ryan-1.jpg" alt="portrait" />
             </div>
-            <div class="tc-center mb-10 p-lr-20">
-                <p class="mb-10">I am a front-end react developer with over 10 years experience in the tech industry and
-                    I am
-                    passionate
-                    about delivering great products to consumers.</p>
-                <p class="mb-10">I have always had an interest in web development so I have
-                    worked on my own projects for many years but I have worked as a front end developer since 2018.</p>
-                <p>I am
-                    also a volunteer mental health mentor for the charity Mind.</p>
+            <div class="tc-center mb-10 p-lr-20 split-content">
+                <p class="mb-10">I am a front-end react developer with over 10 years experience in the tech industry and I am passionate about delivering great products to consumers.</p>
+                <p class="mb-10">I have always had an interest in web development so I have worked on my own projects for many years but I have worked as a front end developer since 2018.</p>
+                <p>I am also a volunteer mental health mentor for the charity, Mind.</p>
             </div>
             <div class="tc-center">
-                <div class="lrg-text pt-20">Usual tech stack:</div>
+                <div class="left-sub-section pt-20">Usual tech stack:</div>
                 <div><i class="fa-brands fa-html5"></i>
                     <i class="fa-brands fa-css3-alt"></i>
                     <i class="fa-brands fa-square-js"></i>
@@ -41,11 +36,10 @@
                 </div>
             </div>
             <div class="tc-center">
-                <div class="tc-center lrg-text pt-20 mb-10">Other relevant experience</div>
-                <p style="font-size: 1.1rem" class="pt-20">Testing Frameworks:</p>
+                <h3 class="pt-20 left-sub-section">Testing Frameworks:</h3>
                 <p>Jest</p>
                 <p>Cypress</p>
-                <p style="font-size: 1.1rem" class="pt-20">Other:</p>
+                <h3 class="pt-20 left-sub-section">Other:</h3>
                 <p>Pixi JS - WebGL rendering engine</p>
             </div>
             </div>
@@ -60,9 +54,11 @@
                 my skill set and stay updated with the latest advancements in React and related technologies.</p>
             </article>
 
-            <article class="job-block pt-20"><span class="experience-heading">Work experience:</span>
+            <article class="pt-20">
+                <h2 class="experience-heading">Work experience:</h2>
 
-                <article class="job-block job-bg p10"><span class="experience-title lrg-text">Service Power</span>
+                <article class="job-block job-bg">
+                    <h2 class="experience-title lrg-text">Service Power</h2>
                     <p class="date-range">Sept 2021 to present | <span class="job-title">Front End Developer</span></p>
                     <p>My role here is front end react developer on a product that is being migrated from a native windows
                         app and rebuilt for the web in React. This is a commercial product used by over 18,000 different
@@ -82,7 +78,7 @@
                     </div>
                 </article>
 
-                <article class="job-block job-bg p10"><span class="experience-title lrg-text">Twitch Chat Bot</span>
+                <article class="job-block job-bg"><span class="experience-title lrg-text">Twitch Chat Bot</span>
                     <p class="date-range">2020 | <span class="job-title">Personal Node JS Project</span></p>
                     <p>
                         I created a twitch chatbot using Node JS and twitch API's to monitor incoming messages in twitch
@@ -115,7 +111,7 @@
                 </div>
             </article>
 
-            <article class="job-block job-bg p10"><span class="experience-title lrg-text">Juniper Education</span>
+            <article class="job-block job-bg"><span class="experience-title lrg-text">Juniper Education</span>
                 <p class="date-range">Nov 2018 to Sept 2021 | <span class="job-title">UI/UX and Front End
                         Developer</span></p>
                 <p>
@@ -141,8 +137,9 @@
                         <p class="experience-title lrg-text">About this project:</p>
                         <p>My work at juniper was to a some degree a continuation of the work I started at OTrack.
                         </p>
-                        <p class="pt-20">The app was built using React for the front end. The focus was to build on the app that we started at OTrack, adding new features and rebranding the app
-                            to match the new branding guidlines. We added features that saved teachers time using tools such as rapid data entry though mass entry options and providing them with data analysis they would normally have to do manually.
+                        <p class="pt-20">The app was built using React for the front end. Here I was working from UI designs built by the lead designer and adding those features to the product.
+                            I worked on all front end areas of the app from building data dashboards to user interfaces, such as data entry screens and user management areas.
+
                         </p>
                         <p class="pt-20">
                             The platform was connected with other products across the business and also with external products such as managment information systems via API's, allowing
@@ -152,36 +149,48 @@
                 </div>
             </article>
 
-            <article class="job-block job-bg p10"><span class="experience-title lrg-text">OTrack</span>
+            <article class="job-block job-bg"><span class="experience-title lrg-text">OTrack</span>
                 <p class="date-range">Nov 2013 to Nov 2018 | <span class="job-title">Team Lead and Developer</span></p>
                 <p class="mb-10">My initial role here was customer support however I quickly moved to crystal report
-                    development and
-                    advanced onto team leader within a period of around 18 months after starting with the business.
-                <p>I was responsible for the report development team, ensuring work is planned properly, deadlines are
-                    met and schools are kept informed with the progress.
-                    I also developed crystal reports to support the teams workload where required. </p>
+                    development and advanced onto team leader within a period of around 18 months after starting with the business.
+                <p class="mb-10">I was responsible for the report development team, ensuring work is planned properly, deadlines were met and schools were kept informed with the progress.</p>
+
+                <p>As Crystal Reports started to be phased out, I started my learning journey to join the front end dev team in rebuilding the exisiting product in React.</p>
                 <button id="otrack-btn" onclick="toggleProject('otrack-project', 'otrack-btn')">View Project</button>
                 <div id="otrack-project" class="d-flex pt-20 display-none">
+                    <section>
+                        <span>OTrack v1</span>
+                        <img class="mb-10 mw-300" src="./images/Otrack1.png" alt="otrack app screenshot">
+
+                        <span>OTrack v2</span>
+                        <img class="mw-300" src="./images/Otrack2.jpg" alt="otrack v2 assessment screen">
+
+                    </section>
+
                     <article class="project-info">
                         <p class="experience-title lrg-text">About this project:</p>
-                        <p>Coming Soon</p>
+                        <p>OTrack was my introduction to the coding world. I started coding Crystal Reports. As this was phased out, I began learning to code to move onto their web product.
+                        </p>
+                        <p class="pt-20">The existing app was starting to age so the decision was made to start rebuilding a modern version. I joined the team early in the development of the new version being made in React
+                            so I was exposed to a lot of the challenges that come with starting a completely fresh project. Being part of the product development so early on allowed me to very quickly get an understanding
+                            of all the moving parts behind the scene that made a successful web app. I spent my time learning as much as possible and developed my skills on the fly whilst working on the app.
+                        </p>
+                        <p class="pt-20">
+                            Building OTrack was a fantastic learning experience for me to start developing my understanding of authentication, databases and communication with API's and getting to see first hand what
+                            it takes to see a product through from a concept to relative completion.
+                        </p>
                     </article>
                 </div>
             </article>
 
-            <article class="job-block job-bg p10"><span class="experience-title lrg-text">Plusnet</span>
+            <article class="job-block job-bg"><span class="experience-title lrg-text">Plusnet</span>
                 <p class="date-range">Jan 2012 - Nov 2013 | <span class="job-title">Tech Support</span></p>
-                <p class="mb-10">My initial role here was customer support however I quickly moved to crystal report
-                    development and
-                    advanced onto team leader within a period of around 18 months after starting with the business.
-                <p>I was responsible for the report development team, ensuring work is planned properly, deadlines are
-                    met and schools are kept informed with the progress.
-                    I also developed crystal reports to support the teams workload where required. </p>
+                <p class="mb-10">Network Support for residential and business Plusnet customers.</p>
             </article>
 
-            <article class="job-block job-bg p10"><span class="experience-title lrg-text">Dixons</span>
+            <article class="job-block job-bg"><span class="experience-title lrg-text">Dixons</span>
                 <p class="date-range">Jan 2012 - Nov 2013 | <span class="job-title">Technical Expert</span></p>
-                <p class="mb-10">first and second line technical support for Dixons customers</p>
+                <p class="mb-10">First and second line technical support for Dixons customers.</p>
             </article>
 
         </section>

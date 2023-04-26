@@ -17,4 +17,3 @@ let projectVisibility = {
     const classes = getClasses(project);
     projectVisibility[projectId] ? classes.remove("display-none") : classes.add("display-none");
   }
-  
