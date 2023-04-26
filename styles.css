@@ -163,3 +163,16 @@ button:disabled {
 .pt-20 {
     padding-top: 20px;
 }
+
+.d-flex {
+    display: flex;
+}
+
+.project-info {
+    margin-left: 10px;
+}
+
+.display-none {
+    display: none;
+}
+

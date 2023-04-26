@@ -4,15 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Ryan Kirk - CV</title>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-PR59dPj/hgNnLS/8V7+PbxvKjV7MfYgq3mFG+c1so3sEi7jKs+pMyAfuvbRHU6RnUzT2Uddj3qixF1xMAIKMw=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-PR59dPj/hgNnLS/8V7+PbxvKjV7MfYgq3mFG+c1so3sEi7jKs+pMyAfuvbRHU6RnUzT2Uddj3qixF1xMAIKMw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/dd7dab9e30.js" crossorigin="anonymous"></script>
 </head>
@@ -22,8 +18,7 @@
         <section class="left-about w30">
             <p class="abt-name ltr-spc"><span class="abt-l">Ryan</span><span class="abt-r">Kirk</span></p>
             <p class="tc-center ltr-spc">UK based Front End Developer</p>
-            <div class="hero-portrait"><img class="drop-shadow hero-img" style="flex: 1" src="./images/Ryan-1.jpg"
-                    alt="man-thinking" />
+            <div class="hero-portrait"><img class="drop-shadow hero-img" style="flex: 1" src="./images/Ryan-1.jpg" alt="man-thinking" />
             </div>
             <div class="tc-center mb-10 p-lr-10">
                 <p class="mb-10">I am a front-end react developer with over 10 years experience in the tech industry and
@@ -78,15 +73,50 @@
                     detail and creativity consistently exceeded my expectations. His work ethic was second to none and
                     he really had a passion to show what he was great at"<p>Ajmal Khan - Development manager</p>
                 </blockquote>
-                <button disabled title="Coming Soon">View Project</button>
+                <button id="SP-btn" onclick=toggleSP()>View Project</button>
+                <div id="sp-project" class="d-flex pt-20 display-none">
+                    <article class="project-info">
+                        <p class="experience-title">About this project:</p>
+                        <p>Coming Soon</p>
+                    </article>
+                </div>
             </article>
 
             <article class="job-block"><span class="experience-title">Twitch Chat Bot</span>
                 <p class="date-range">2020 | <span class="job-title">Personal Node JS Project</span></p>
                 <p>
-                    I created a twich chatbot using Node JS and twitch API's to monitor incoming messages in twitch streams. It had the ability to block offensive words, block repeat offenders of rule breaches, tell jokes, greet people when they entered the chat, respond to commands and share information at set time intervals.
+                    I created a twich chatbot using Node JS and twitch API's to monitor incoming messages in twitch
+                    streams. It had the ability to block offensive words, block repeat offenders of rule breaches, tell
+                    jokes, greet people when they entered the chat, respond to commands and share information at set
+                    time intervals.
                 </p>
-                <button disabled title="Coming Soon">View Project</button>
+                <button onclick=toggleTwitch() id="twitch-btn">View Project</button>
+                <div id="twitch-project" class="d-flex pt-20 display-none">
+                    <img src="./images/twitch.png" alt="Twitch.tv">
+                    <article class="project-info">
+                        <p class="experience-title">About this project:</p>
+                        <p>This was a project I worked on in my spare
+                            time to give to a friend who streamed video games on Twitch. He was struggling to focus on
+                            streaming while dealing with requests in the stream chat and contending with the abuse and
+                            trolling that can come from that platform.
+                        <p class="pt-20">I saw an opportunity to get some basic
+                            understanding
+                            of node and improve my coding skills. After a fair few videos and many hours of trail and
+                            error
+                            I built an app that could be ran locally on his machine every time he streamed.</p>
+                        <p class="pt-20">
+                            This bot had its own user account and permissions as an admin on his twitch channel and
+                            would monitor incoming messages for spam/abuse, respond to commands such as "!joke" and return a random
+                            joke from an API that returned a random joke. It would also keep track of if a person spoke for the first time in chat and greet
+                            them when they did, plus a few other basic features such as time based announcements and
+                            reminders to follow on social media platforms.
+                        </p>
+                        </p>
+                    </article>
+                </div>
+            </article>
+
+            </div>
             </article>
 
             <article class="job-block"><span class="experience-title">Juniper Education</span>
@@ -105,7 +135,13 @@
                     in late 2018 having had some basic self-taught web development experience I moved into this
                     role quickly.
                 </p>
-                <button disabled title="Coming Soon">View Project</button>
+                <button id="jun-btn" onclick=toggleJun()>View Project</button>
+                <div id="jun-project" class="d-flex pt-20 display-none">
+                    <article class="project-info">  
+                        <p class="experience-title">About this project:</p>
+                        <p>Coming Soon</p>
+                    </article>
+                </div>
             </article>
 
             <article class="job-block"><span class="experience-title">OTrack</span>
@@ -116,7 +152,13 @@
                 <p>I was responsible for the report development team, ensuring work is planned properly, deadlines are
                     met and schools are kept informed with the progress.
                     I also developed crystal reports to support the teams workload where required. </p>
-                <button disabled title="Coming Soon">View Project</button>
+                <button id="otrack-btn" onclick=toggleOtrack()>View Project</button>
+                <div id="otrack-project" class="d-flex pt-20 display-none">
+                    <article class="project-info">
+                        <p class="experience-title">About this project:</p>
+                        <p>Coming Soon</p>
+                    </article>
+                </div>
             </article>
 
             <article class="job-block"><span class="experience-title">Plusnet</span>
