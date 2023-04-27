@@ -1,16 +1,25 @@
 /* Reset default margin and padding */
-body, h1, h2, h3, h4, p, ul, li {
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul,
+li {
     margin: 0;
     padding: 0;
     font-weight: 100;
 }
 
-body,html {
+body,
+html {
     height: 100%;
     font-family: 'Open Sans', sans-serif;
 }
 
-.experience-heading, .experience-title {
+.experience-heading,
+.experience-title {
     color: #484848;
     font-weight: 100;
 }
@@ -58,7 +67,7 @@ main {
     font-weight: 100;
 }
 
-.right-experience { 
+.right-experience {
     display: flex;
     flex-direction: column;
     padding: 0% 10%;
@@ -86,7 +95,7 @@ main {
 }
 
 .job-title {
-    color:rgb(45, 45, 45)
+    color: rgb(45, 45, 45)
 }
 
 .tc-center {
@@ -98,7 +107,8 @@ main {
     margin-top: 3px;
     margin-bottom: 10px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(130, 130, 130);;
+    border-bottom: 1px solid rgb(130, 130, 130);
+    ;
 }
 
 blockquote {
@@ -191,8 +201,8 @@ button:disabled {
     display: none;
 }
 
-.mw-300 {
-    max-width: 300px;
+.screenshot-max-w {
+    max-width: 100%;
     height: auto;
 }
 
@@ -204,4 +214,35 @@ button:disabled {
 .split-content {
     padding-bottom: 20px;
     border-bottom: 1px solid #747474;
+}
+
+#twitch-project img {
+    max-width: 100%;
+    height: auto;
+}
+
+.max-screenshot-sec-width {
+    max-width: 30%;
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (min-width: 768px) and (min-resolution: 192dpi),
+only screen and (max-width: 900px) {
+
+    /* styles for devices with a screen width of 768px or higher and a DPR of 2 or higher */
+    .job-block .d-flex {
+        flex-direction: column-reverse;
+    }
+
+    .right-experience {
+        padding: 3%;
+    }
+
+    .screenshots {
+        text-align: center;
+    }
+
+    .max-screenshot-sec-width  {
+        max-width: 100%
+    }
 }
