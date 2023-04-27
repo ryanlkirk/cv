@@ -36,6 +36,11 @@ html {
     font-size: 1.4rem;
 }
 
+.lrg-text-sub {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
 /* Style the main content */
 main {
     display: flex;
