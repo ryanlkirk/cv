@@ -209,6 +209,7 @@ button:disabled {
 .screenshot-max-w {
     max-width: 100%;
     height: auto;
+    transition: transform 0.2s ease-in-out;
 }
 
 .left-sub-section {
@@ -230,11 +231,15 @@ button:disabled {
     max-width: 30%;
 }
 
+.screenshot-max-w:hover {
+    transform: scale(2);
+}
+
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-width: 768px) and (min-resolution: 192dpi),
 only screen and (max-width: 900px) {
 
-    /* styles for devices with a screen width of 768px or higher and a DPR of 2 or higher */
+    /* styles for devices with a screen width of 768px or higher and a DPR of 2 or higher or desktop with 900px resolution */
     .job-block .d-flex {
         flex-direction: column-reverse;
     }
@@ -247,7 +252,11 @@ only screen and (max-width: 900px) {
         text-align: center;
     }
 
-    .max-screenshot-sec-width  {
+    .max-screenshot-sec-width {
         max-width: 100%
+    }
+
+    .screenshot-max-w:hover {
+        transform: none;
     }
 }
