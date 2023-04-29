@@ -113,7 +113,6 @@ main {
     margin-bottom: 10px;
     padding-bottom: 10px;
     border-bottom: 1px solid rgb(130, 130, 130);
-    ;
 }
 
 blockquote {
@@ -238,6 +237,12 @@ button:disabled {
 .top-split {
     border-top: 1px solid rgb(130, 130, 130);
     margin-top: 20px;
+}
+
+.left-sub-icons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
