@@ -18,6 +18,7 @@
 
 <body>
     <main>
+        <nav class="dark-mode"><i title="toggle dark mode" onclick="toggleDarkMode()" class="fa-sharp fa-solid fa-moon fa-2xl"></i></nav>
         <section class="left-about w30">
             <h1 class="abt-name ltr-spc">Ryan Kirk</h1>
             <h2 class="uk-dev tc-center ltr-spc">UK based Front End Developer</h2>
@@ -74,11 +75,11 @@
                         Home Depot and LG.
                     </p>
 
-                    <blockquote>"His calm approach to work made him an awesome person to work alongside. Ryan's attention to
+                    <blockquote class="quote">"His calm approach to work made him an awesome person to work alongside. Ryan's attention to
                         detail and creativity consistently exceeded my expectations. His work ethic was second to none and
                         he really had a passion to show what he was great at"<p>Ajmal Khan - Development manager</p>
                     </blockquote>
-                    <button id="SP-btn" onclick="toggleProject('sp-project', 'SP-btn')">View Project</button>
+                    <button id="SP-btn" class="project-button" onclick="toggleProject('sp-project', 'SP-btn')">View Project</button>
                     <div id="sp-project" class="d-flex pt-20 display-none top-split">
                         <section class="screenshots max-screenshot-sec-width">
                             <img class="mb-10 screenshot-max-w" src="./images/sp1.jfif" alt="Service Power Calendar view">
@@ -108,7 +109,7 @@
                         jokes, greet people when they entered the chat, respond to commands and share information at set
                         time intervals.
                     </p>
-                    <button id="twitch-btn" onclick="toggleProject('twitch-project', 'twitch-btn')">View Project</button>
+                    <button id="twitch-btn" class="project-button" onclick="toggleProject('twitch-project', 'twitch-btn')">View Project</button>
                     <div id="twitch-project" class="d-flex pt-20 display-none top-split">
                         <section class="screenshots" style="flex: 1"><img class="screenshot-max-w" src="./images/twitch.png" alt="Twitch.tv"></section>
 
@@ -141,13 +142,13 @@
                     across 25 countries and provides data management, visual dashboards, admin information, sage
                     integration and data analysis to schools.
                 </p>
-                <blockquote>“Ryan’s innate attention to detail and desire to solve problems with the highest quality of
+                <blockquote class="quote">“Ryan’s innate attention to detail and desire to solve problems with the highest quality of
                     work is amazing. This attitude is exactly why he’s delivered so many top-class solutions for me over
                     the last 7+ years.” <p>Tom Parkinson – Founder of OTrack</p>
                 </blockquote>
                 <p>Juniper acquired the previously mentioned OTrack and work began to switch focus onto expanding the app to a new and bigger product called "Sonar Tracker".
                 </p>
-                <button id="jun-btn" onclick="toggleProject('jun-project', 'jun-btn')">View Project</button>
+                <button class="project-button" id="jun-btn" onclick="toggleProject('jun-project', 'jun-btn')">View Project</button>
                 <div id="jun-project" class="d-flex pt-20 display-none top-split">
                     <section class="screenshots max-screenshot-sec-width"><img class="mb-10 screenshot-max-w" src="./images/juniper1.png" alt="juniper app screenshot">
                         <img class="screenshot-max-w" src="./images/juniper2.png" alt="juniper assessment screen">
@@ -183,7 +184,7 @@
                 <p class="mb-10">I was responsible for the report development team, ensuring work is planned properly, deadlines were met and schools were kept informed with the progress.</p>
 
                 <p>As Crystal Reports started to be phased out, I started my learning journey to join the front end dev team in rebuilding the exisiting product in React.</p>
-                <button id="otrack-btn" onclick="toggleProject('otrack-project', 'otrack-btn')">View Project</button>
+                <button id="otrack-btn" class="project-button" onclick="toggleProject('otrack-project', 'otrack-btn')">View Project</button>
                 <div id="otrack-project" class="d-flex pt-20 display-none top-split">
                     <section class="screenshots max-screenshot-sec-width">
                         <span>OTrack v1</span>

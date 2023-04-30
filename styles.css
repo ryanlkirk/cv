@@ -159,7 +159,7 @@ blockquote {
     font-size: 1.2rem;
 }
 
-button {
+.project-button {
     font-family: 'Open Sans', sans-serif;
     margin-top: 10px;
     width: 125px;
@@ -171,11 +171,11 @@ button {
     font-weight: 100;
 }
 
-button:hover {
+.project-button:hover {
     background: #788275;
 }
 
-button:disabled {
+.project-button:disabled {
     cursor: not-allowed;
 }
 
@@ -243,6 +243,28 @@ button:disabled {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+}
+
+/* DARK MODE */
+
+nav {
+    padding:35px 15px;
+}
+
+.dark-bg {
+    background-color: #202020;
+}
+
+.dark-contrast-bg {
+    background-color: #181616;
+}
+
+.light-text {
+    color: whitesmoke;
+}
+
+.quote-text {
+    color: #b4cda9;
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
