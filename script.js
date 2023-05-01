@@ -35,8 +35,8 @@ toggleDarkMode = () => {
 
   processClassChange(document.getElementsByClassName("right-experience w70")[0], "light-text");
 
-  processClassChange(document.getElementsByClassName("dark-mode")[0], "dark-bg");
   processClassChange(document.getElementsByClassName("dark-mode")[0], "light-text");
+  processClassChange(document.getElementsByClassName("fa-moon")[0], "moon-knight")
 
   processClassChange(document.getElementsByClassName("experience-heading")[0], "light-text");
 

@@ -249,6 +249,9 @@ blockquote {
 
 nav {
     padding:35px 15px;
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
 
 .dark-bg {
@@ -265,6 +268,14 @@ nav {
 
 .quote-text {
     color: #b4cda9;
+}
+
+.fa-moon {
+    color: white;
+}
+
+.moon-knight {
+    color: #a5a5a5;
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
