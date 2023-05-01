@@ -58,7 +58,9 @@ main {
 .w70 {
     width: 70%;
     min-width: 500px;
+    background-color: #ffffff
 }
+
 
 .ltr-spc {
     letter-spacing: 5px;
@@ -97,6 +99,8 @@ main {
     flex-direction: column;
     margin-bottom: 30px;
     padding: 20px;
+    border-radius: 15px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
 .job-title {
@@ -152,7 +156,7 @@ blockquote {
 }
 
 .job-bg {
-    background-color: #f5f5f5;
+    background-color: white;
 }
 
 .emp {
@@ -259,7 +263,7 @@ nav {
 }
 
 .dark-bg {
-    background-color: #202020;
+    background-color: #2a2a2a;
 }
 
 .dark-contrast-bg {
