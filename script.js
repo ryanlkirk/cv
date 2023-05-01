@@ -30,7 +30,7 @@ toggleDarkMode = () => {
   const allProjectAbout = document.getElementsByClassName("experience-title lrg-text-sub");
 
   processClassChange(document.getElementsByClassName("right-experience w70")[0], "dark-bg");
-  
+
   processClassChange(document.getElementsByClassName("left-about w30")[0], "dark-contrast-bg");
 
   processClassChange(document.getElementsByClassName("right-experience w70")[0], "light-text");
@@ -50,19 +50,14 @@ toggleDarkMode = () => {
     processClassChange(el, "quote-text");
   });
 
-  Array.from(allTitles).forEach(el => {
-    processClassChange(el, "light-text");
-  });
+  const elementsToIterate = [
+    ...allTitles,
+    ...allSubTitles,
+    ...allDates,
+    ...allProjectAbout
+  ];
 
-  Array.from(allSubTitles).forEach(el => {
-    processClassChange(el, "light-text");
-  });
-
-  Array.from(allDates).forEach(el => {
-    processClassChange(el, "light-text");
-  });
-
-  Array.from(allProjectAbout).forEach(el => {
+  elementsToIterate.forEach(el => {
     processClassChange(el, "light-text");
   });
 
