@@ -63,10 +63,6 @@ toggleDarkMode = () => {
 
 }
 
-processClassChange = (el, newStyle) => {
-  if (viewMode) {
-    el.classList.add(newStyle)
-  } else {
-    el.classList.remove(newStyle)
-  }
+const processClassChange = (el, newStyle) => {
+  viewMode ? el.classList.add(newStyle) : el.classList.remove(newStyle);
 }
