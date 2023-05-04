@@ -1,5 +1,5 @@
 # Aren't there enough React devs already?!
-Just one more react dev wouldn't hurt. Hi, I'm Ryan. Welcome to my little corner of github! This Github Site serves as something of an interactive CV, showcasing my love for all things React and some of the projects I've worked on.
+Welcome to my little corner of github! This Github Site serves as something of an interactive CV, showcasing my love for all things React and some of the projects I've worked on.
 
 I'm a front-end developer with a passion for building intuitive user interfaces using React and you'll find information about my work experience and technical skills on this page.
 
