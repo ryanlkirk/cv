@@ -53,6 +53,7 @@ main {
     background-color: #171A21;
     color: white;
     padding: 25px;
+    border-right: 1px solid #4c4c4c;
 }
 
 .w70 {
