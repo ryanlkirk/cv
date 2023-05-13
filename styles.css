@@ -9,19 +9,13 @@ ul,
 li {
     margin: 0;
     padding: 0;
-    font-weight: 100;
 }
 
 body,
 html {
     height: 100%;
-    font-family: 'Open Sans', sans-serif;
-}
-
-.experience-heading,
-.experience-title {
+    font-family: 'Roboto', sans-serif;
     color: #484848;
-    font-weight: 100;
 }
 
 .experience-heading {
@@ -31,6 +25,28 @@ html {
     border-top: 1px solid gray;
     margin-bottom: 20px;
 }
+
+.header {
+    align-items: center;
+}
+
+.header-left {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    max-width: 400px;
+    min-width: 300px;
+    background-color: #171A21;
+    background-image: url(./images/wave.svg);
+    animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+    transform: translate3d(0, 0, 0);
+    background-repeat: no-repeat;
+    color: white;
+    padding: 0px 25px;
+    border-right: 1px solid #4c4c4c;
+}
+
 
 .lrg-text {
     font-size: 1.4rem;
@@ -44,12 +60,18 @@ html {
 /* Style the main content */
 main {
     display: flex;
+    flex-direction: column;
+}
+
+content {
+    display: flex;
     flex-direction: row;
 }
 
 .w30 {
     width: 30%;
-    min-width: 250px;
+    min-width: 300px;
+    max-width: 400px;
     background-color: #171A21;
     color: white;
     padding: 25px;
@@ -62,17 +84,82 @@ main {
     background-color: #ffffff
 }
 
-
-.ltr-spc {
-    letter-spacing: 5px;
+.skillbar,
+.understanding {
+    height: 30px;
+    border-radius: 20px;
 }
 
-.left-about {
+.skillbar {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin-bottom: 20px;
+}
+
+.skillheader {
+    justify-content: space-between;
+    align-items: center;
+}
+
+#skill-info {
+    margin-bottom: 10px;
+    color: #9d9d9d;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    padding: 15px;
+}
+
+.understanding {
+    padding-left: 15px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    background-color: #94a090;
+}
+
+.skillbars {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: 25px;
-    font-weight: 100;
+    width: 100%;
+}
+
+.html-w {
+    width: 100%;
+}
+
+.css-w {
+    width: 90%;
+}
+
+.js-w {
+    width: 90%;
+}
+
+.react-w {
+    width: 90%;
+}
+
+.ts-w {
+    width: 80%;
+}
+
+.uiux-w {
+    width: 75%;
+}
+
+.jest-w {
+    width: 50%;
+}
+
+.cypress-w {
+    width: 50%;
+}
+
+
+
+.ltr-spc {
+    letter-spacing: 5px;
 }
 
 .right-experience {
@@ -85,13 +172,11 @@ main {
 .abt-name {
     font-size: 1.8rem;
     color: #DADFF7;
-    font-weight: 100;
 }
 
 .uk-dev {
     font-size: 1rem;
     color: #DADFF7;
-    font-weight: 100;
 }
 
 
@@ -173,11 +258,14 @@ blockquote {
     border: 1px solid gray;
     color: white;
     font-size: 1rem;
-    font-weight: 100;
 }
 
 .project-button:hover {
     background: #788275;
+}
+
+.fw-200 {
+    font-weight: 200;
 }
 
 .project-button:active {
@@ -198,9 +286,14 @@ blockquote {
     padding: 0px 20px;
 }
 
+.pr-10 {
+    padding-right: 10px;
+}
+
 .pt-10 {
     padding-top: 10px;
 }
+
 
 .pt-20 {
     padding-top: 20px;
@@ -225,7 +318,6 @@ blockquote {
 }
 
 .left-sub-section {
-    font-weight: 100;
     font-size: 1.2rem;
 }
 
@@ -261,7 +353,7 @@ blockquote {
 /* DARK MODE */
 
 nav {
-    padding:35px 15px;
+    padding: 35px 15px;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -289,6 +381,15 @@ nav {
 
 .moon-knight {
     color: #a5a5a5;
+}
+
+.greeting {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+.name {
+    font-size: 6rem;
 }
 
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),

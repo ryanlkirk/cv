@@ -8,55 +8,69 @@
     <meta name="author" content="Ryan Kirk">
     <title>Ryan Kirk - CV</title>
     <script src="https://kit.fontawesome.com/dd7dab9e30.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,800;1,400&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/dd7dab9e30.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <main>
-        <nav class="dark-mode"><i title="toggle dark mode" onclick="toggleDarkMode()" class="fa-sharp fa-solid fa-moon fa-2xl"></i></nav>
-        <section class="left-about w30">
-            <h1 class="abt-name ltr-spc">Ryan Kirk</h1>
-            <h2 class="uk-dev tc-center ltr-spc">UK based Front End Developer</h2>
-            <div class="hero-portrait"><img class="drop-shadow hero-img" style="flex: 1" src="./images/Ryan-1.webp" alt="portrait" /></div>
-            <div class="tc-center mb-10 p-lr-20 split-content">
-                <p class="mb-10">I am a front-end react developer with over 10 years experience in the tech industry and I am passionate about delivering great products to consumers.</p>
-                <p class="mb-10">I have always had an interest in web development so I have worked on my own projects for many years but I have worked as a front end developer since 2018.</p>
-                <p>I am also a volunteer mental health mentor for the charity, Mind.</p>
-            </div>
-            <div class="tc-center left-exp">
-                <div class="left-sub-section">Usual tech stack:</div>
-                <div>
-                    <p>HTML</p>
-                    <p>CSS</p>
-                    <p>Javascript</p>
-                    <p>Typescript</p>
-                    <p>React</p>
+        <div class="header d-flex">
+            <section class="header-left">
+                <div class="hero-portrait"><img class="drop-shadow hero-img" style="flex: 1" src="./images/Ryan-1.webp" alt="portrait" /></div>
+            </section>
+
+            <section class="right-experience w70">
+                <section>
+                    <h1 class="name">Ryan Kirk.</h1>
+                    <h2 class="greeting">Front End Developer</h2>
+                </section>
+            </section>
+        </div>
+        <content>
+            <nav class="dark-mode"><i title="toggle dark mode" onclick="toggleDarkMode()" class="fa-sharp fa-solid fa-moon fa-2xl"></i></nav>
+            <section class="w30">
+
+
+                <div class="d-flex skillheader mb-10">
+                    <h2 class="fw-200">Skills</h2><i id="skillQuestion" onclick="toggleSkillInfo()" class="fa-regular fa-circle-question fa-xl"></i>
                 </div>
-            </div>
-            <div class="tc-center left-exp">
-                <h3 class="pt-20 left-sub-section">Testing Frameworks:</h3>
-                <p>Jest</p>
-                <p>Cypress</p>
-            </div>
-            <div class="left-sub-icons">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-square-js"></i>
-                <i class="fa-brands fa-react"></i>
-                <i class="fa-brands fa-node-js"></i>
-                <i class="fa-brands fa-github"></i>
-            </div>
-        </section>
-        <section class="right-experience w70">
-            <section>
-                <h2 class="experience-heading">About Me:</h2>
-                <p class="mb-10">Hi, I'm Ryan. Welcome to my little corner of Github! I'm a front-end developer with a passion for building intuitive and beautiful user interfaces using React.</p>
-                <p class="mb-10">Yet another react dev huh? So what sets me apart? It's my love of writing code that people don't hate working on. 
+                <div id="skill-info" class="display-none">
+                    <p class="mb-10">I have attempted to represent the skill percentage on the basis of my ability to either work completely independently or know how to find the solution to a problem through research rather than complete mastery of the topic.</p>
+                    <p>UI/UX is a representation of understand of UI/UX best practices rather than design skills</p>
+                </div>
+
+                <div class="skillbars">
+                    <div class="skillbar">
+                        <div class="understanding html-w">HTML/CSS</div>
+                    </div>
+                    <div class="skillbar">
+                        <div class="understanding js-w">JS</div>
+                    </div>
+                    <div class="skillbar">
+                        <div class="understanding react-w">React</div>
+                    </div>
+                    <div class="skillbar">
+                        <div class="understanding ts-w">TypeScript</div>
+                    </div>
+                    <div class="skillbar">
+                        <div class="understanding uiux-w">UI/UX</div>
+                    </div>
+                    <div class="skillbar">
+                        <div class="understanding jest-w">Jest</div>
+                    </div>
+                    <div class="skillbar">
+                        <div class="understanding cypress-w">Cypress</div>
+                    </div>
+                </div>
+
+            </section>
+            <section class="right-experience w70">
+
+                <p class="mb-10">Welcome to my little corner of Github! I'm a front-end developer with a passion for building intuitive and beautiful user interfaces using React.</p>
+                <p class="mb-10">Yet another react dev huh? So what sets me apart? It's my love of writing code that people don't hate working on.
                 </p>
                 <p class="mb-10">I mean, think about it - readable code is like a love letter to your future self (or another developer who has to work on the same codebase). It's like saying, "Hey, I care about you and your sanity, so I'm going to make sure this code is easy to understand and maintain."
                     So yes, I take readable code seriously.</p>
@@ -226,8 +240,8 @@
                     <p class="date-range">Jan 2012 - Nov 2013 | <span class="job-title">Technical Expert</span></p>
                     <p class="mb-10">First and second line technical support for Dixons customers.</p>
                 </article>
-
             </section>
+        </content>
     </main>
 </body>
 
