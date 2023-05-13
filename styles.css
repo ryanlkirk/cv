@@ -18,6 +18,43 @@ html {
     color: #484848;
 }
 
+/* Padding and margin classes */
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.pl-10 {
+    padding-left: 10px;
+}
+
+.pl-5 {
+    padding-left: 5px;
+}
+
+.p10 {
+    padding: 10px
+}
+
+.p-lr-20 {
+    padding: 0px 20px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.pt-20 {
+    padding-top: 20px;
+}
+
 .experience-heading {
     font-size: 1.4rem;
     padding: 15px 0px;
@@ -26,17 +63,16 @@ html {
     margin-bottom: 20px;
 }
 
-a, a:hover, a:focus, a:active {
+a,
+a:hover,
+a:focus,
+a:active {
     text-decoration: none;
     color: inherit;
 }
 
 .header {
     align-items: center;
-}
-
-.pl-10 {
-    padding-left: 10px;
 }
 
 .header-left {
@@ -216,14 +252,6 @@ blockquote {
     font-size: 1.1rem;
 }
 
-.mb-10 {
-    margin-bottom: 10px;
-}
-
-.mb-20 {
-    margin-bottom: 20px;
-}
-
 .hero-portrait {
     width: 250px;
     height: 250px;
@@ -239,14 +267,6 @@ blockquote {
     height: 100%;
     object-fit: cover;
     overflow: hidden;
-}
-
-.pl-5 {
-    padding-left: 5px;
-}
-
-.p10 {
-    padding: 10px
 }
 
 .job-bg {
@@ -284,22 +304,7 @@ blockquote {
     cursor: not-allowed;
 }
 
-.p-lr-20 {
-    padding: 0px 20px;
-}
 
-.pr-10 {
-    padding-right: 10px;
-}
-
-.pt-10 {
-    padding-top: 10px;
-}
-
-
-.pt-20 {
-    padding-top: 20px;
-}
 
 .d-flex {
     display: flex;
@@ -397,7 +402,7 @@ nav {
 only screen and (min-width: 768px) and (min-resolution: 192dpi),
 only screen and (max-width: 900px) {
     /* styles for devices with a screen width of 768px or higher and a DPR of 2 or higher or desktop with 900px resolution */
-    
+
     .job-block .d-flex {
         flex-direction: column-reverse;
     }
