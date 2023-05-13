@@ -26,8 +26,17 @@ html {
     margin-bottom: 20px;
 }
 
+a, a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: inherit;
+}
+
 .header {
     align-items: center;
+}
+
+.pl-10 {
+    padding-left: 10px;
 }
 
 .header-left {
@@ -73,7 +82,7 @@ content {
     min-width: 300px;
     max-width: 400px;
     background-color: #171A21;
-    color: white;
+    color: rgb(243, 243, 243);
     padding: 25px;
     border-right: 1px solid #4c4c4c;
 }
@@ -103,7 +112,6 @@ content {
 
 #skill-info {
     margin-bottom: 10px;
-    color: #9d9d9d;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 15px;
     padding: 15px;
@@ -189,10 +197,6 @@ content {
     box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
 }
 
-.job-title {
-    color: rgb(45, 45, 45)
-}
-
 .tc-center {
     text-align: center;
 }
@@ -200,19 +204,24 @@ content {
 .date-range {
     color: rgb(130, 130, 130);
     margin-top: 3px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     padding-bottom: 10px;
-    border-bottom: 1px solid rgb(130, 130, 130);
 }
 
 blockquote {
     border-left: 3px solid #728f65;
     padding-left: 15px;
     color: #72836b;
+    font-style: italic;
+    font-size: 1.1rem;
 }
 
 .mb-10 {
     margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
 }
 
 .hero-portrait {
@@ -220,7 +229,6 @@ blockquote {
     height: 250px;
     border-radius: 100%;
     background-color: #ddd;
-    margin-bottom: 20px;
     object-fit: cover;
     overflow: hidden;
     margin-top: 20px;
@@ -274,12 +282,6 @@ blockquote {
 
 .project-button:disabled {
     cursor: not-allowed;
-}
-
-.fa-brands {
-    font-size: 3rem;
-    color: #94a090;
-    padding: 8px;
 }
 
 .p-lr-20 {
@@ -383,9 +385,8 @@ nav {
     color: #a5a5a5;
 }
 
-.greeting {
+.front-end {
     font-size: 2.5rem;
-    margin-bottom: 30px;
 }
 
 .name {
