@@ -20,6 +20,11 @@ toggleProject = (projectId, btnId) => {
   projectVisibility[projectId] ? classes.remove("display-none") : classes.add("display-none");
 }
 
+toggleSkillInfo = () => {
+  const classes = getClasses(document.getElementById("skill-info"))
+  Array.from(classes).indexOf("display-none") > -1 ? classes.remove("display-none") : classes.add("display-none");
+}
+
 toggleDarkMode = () => {
   viewMode = !viewMode ? 1 : 0;
   const allJobBlocks = document.getElementsByClassName("job-block job-bg");
@@ -29,10 +34,12 @@ toggleDarkMode = () => {
   const allDates = document.getElementsByClassName("date-range");
   const allProjectAbout = document.getElementsByClassName("experience-title lrg-text-sub");
   const allExperienceTitles = document.getElementsByClassName("experience-heading");
+  const allRightExperienceAreas = document.getElementsByClassName("right-experience");
 
   processClassChange(document.getElementsByClassName("right-experience w70")[0], "dark-bg");
-
-  processClassChange(document.getElementsByClassName("left-about w30")[0], "dark-contrast-bg");
+  processClassChange(document.getElementsByClassName("header")[0], "dark-bg");
+  processClassChange(document.getElementsByClassName("w30")[0], "dark-contrast-bg");
+  processClassChange(document.getElementsByClassName("header-left")[0], "dark-contrast-bg");
 
   processClassChange(document.getElementsByClassName("right-experience w70")[0], "light-text");
 
@@ -40,6 +47,7 @@ toggleDarkMode = () => {
   processClassChange(document.getElementsByClassName("fa-moon")[0], "moon-knight")
 
   processClassChange(document.getElementsByClassName("quote")[0], "quote-text");
+  
 
   Array.from(allJobBlocks).forEach(el => {
     processClassChange(el, "dark-contrast-bg");
@@ -54,15 +62,21 @@ toggleDarkMode = () => {
     ...allSubTitles,
     ...allDates,
     ...allProjectAbout,
-    ...allExperienceTitles
+    ...allExperienceTitles,
+    ...allRightExperienceAreas
   ];
 
   elementsToIterate.forEach(el => {
     processClassChange(el, "light-text");
   });
 
+  [...allRightExperienceAreas].forEach(el => {
+    processClassChange(el, "dark-bg");
+  });
+
 }
 
 const processClassChange = (el, newStyle) => {
+  console.log(el)
   viewMode ? el.classList.add(newStyle) : el.classList.remove(newStyle);
 }
