@@ -47,8 +47,8 @@ toggleDarkMode = () => {
   processClassChange(document.getElementsByClassName("fa-moon")[0], "moon-knight")
 
   processClassChange(document.getElementsByClassName("quote")[0], "quote-text");
+  processClassChange(document.body, "dark-bg")
   
-
   Array.from(allJobBlocks).forEach(el => {
     processClassChange(el, "dark-contrast-bg");
   });

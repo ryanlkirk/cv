@@ -396,8 +396,8 @@ nav {
 @media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2),
 only screen and (min-width: 768px) and (min-resolution: 192dpi),
 only screen and (max-width: 900px) {
-
     /* styles for devices with a screen width of 768px or higher and a DPR of 2 or higher or desktop with 900px resolution */
+    
     .job-block .d-flex {
         flex-direction: column-reverse;
     }
